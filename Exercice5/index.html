@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-    <title>Page sans Accessibilité</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page accessible</title>
 </head>
 
 <body>
-    <h1>Titre de la Page</h1>
-    <p>Ceci est un paragraphe de texte.</p>
-
-    <!-- Formulaire sans étiquette pour les champs -->
-    <form>
-        <label for="name">Nom:</label>
-        <input id="name" type="text" aria-label="Entrez votre nom" placeholder="Entrez votre nom">
-        <label for="email">Adresse email:</label>
-        <input id="email" type="email" aria-label="Entrez votre adresse e-mail" placeholder="Entrez votre adresse e-mail">
-        <button type="submit">Envoyer</button>
-    </form>
-
-    <!-- Image sans attribut alt -->
-    <img src="assets/image.png" height=250 alt="Description de l'image">
-
-    <!-- Lien sans texte descriptif -->
-    <a href="#" aria-label="Lien vers une autre page">Cliquez ici</a>
+    <main role="main">
+        <h1>Titre de la Page</h1>
+        <p>Ceci est un paragraphe de texte.</p>
+    
+        <form>
+            <label for="name">Nom:</label>
+            <input id="name" type="text" placeholder="Entrez votre nom" required aria-required="true">
+    
+            <label for="email">Adresse email:</label>
+            <input id="email" type="email" placeholder="Entrez votre adresse e-mail" required aria-required="true">
+            <button type="submit">Envoyer</button>
+        </form>
+    
+        <img src="assets/image.png" height="250" alt="Description de l'image">
+    
+        <a href="#" aria-label="Lien vers une autre page" title="Lien vers une autre page">Cliquez ici</a>
+    </main>
 </body>
 
 </html>

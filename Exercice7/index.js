@@ -5,7 +5,8 @@ function convertToBinary() {
 
     // Vérifier si l'entrée est un nombre et non négatif
     if (isNaN(decimalNumber) || decimalNumber < 0) {
-        throw new Error("L'entrée doit être un nombre non négatif.");
+        return
+
     }
 
     // Cas spécial pour 0

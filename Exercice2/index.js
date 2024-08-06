@@ -1,20 +1,22 @@
 // Créez votre fonction ici
 
 function calculate(num1, num2, operateur){
+    const a = Number(num1)
+    const b = Number(num2)
+    
     if(operateur === "+"){
-        return num1 + num2
-    }
-    if (operateur === "*") {
-        return num1 * num2
-    }
-    if (operateur === "-") {
-        return num1 - num2
-    }
-    if (operateur === "/") {
-        if (num2 === 0) {
+        return a + b
+    }else if (operateur === "*") {
+        return a * b
+    }else if (operateur === "-") {
+        return a - b
+    }else if (operateur === "/") {
+        if (b === 0) {
             return "Division by zero is not allowed"
         }
-        return num1 / num2 
+        return a / b 
+    }else {
+        return "Invalid operator"
     }
 }
 
